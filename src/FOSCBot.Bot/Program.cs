@@ -1,3 +1,4 @@
+using ElevenLabs;
 using FOSCBot.Core.Actions;
 using FOSCBot.Core.Services;
 using FOSCBot.Infrastructure.Contract.Client;
@@ -31,6 +32,8 @@ builder.Services.AddOpenAIChatCompletion(
 builder.Services.AddTransient(serviceProvider => new Kernel(serviceProvider));
 
 builder.Services.AddTransient<ProbabilityService>();
+
+builder.Services.AddTransient<ElevenLabsClient>(new ElevenLabsClient(builder.Configuration["ELEVENLABS_API_KEY"]));
 
 #region Navigator
 

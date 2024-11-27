@@ -12,6 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="ElevenLabs-DotNet" Version="3.4.1" />
         <PackageReference Include="Incremental.Common.Random" Version="1.2.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
         <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
